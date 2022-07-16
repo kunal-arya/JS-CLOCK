@@ -11,10 +11,6 @@ function getSeconds() {
     const minuteDeg  = ((minute / 60) * 360 ) + 90;
     const hourDeg    = ((hour / 12) * 360) + 90;
 
-    if(secondsDeg >= 90 &&  secondsDeg < 91){
-        secondsEl.style.transition = `none`;
-    }
-
     secondsEl.style.transform = `rotate(${secondsDeg}deg)`;
     minuteEl.style.transform = `rotate(${minuteDeg}deg)`;
     hourEl.style.transform = `rotate(${hourDeg}deg)`;
